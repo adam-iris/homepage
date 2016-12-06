@@ -1,566 +1,1368 @@
 <!DOCTYPE html>
 <!-- saved from url=(0023)http://dev.iris.edu/hq/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IRIS - Incorporated Research Institutions for Seismology</title>
-    <meta name="google-site-verification" content="7EaJTY_aGsxE5WHtWuLRnxXWpGYdFg4pp-fUs5MJmTw">
-    <meta name="keywords" content="seismology, seismological data, earthquakes, iris dmc">
-    <meta name="p:domain_verify" content="5e9814e5c07e8c4febce2d95b1199ab2">
-    <meta name="description" content="IRIS is a consortium of universities dedicated to the
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   IRIS - Incorporated Research Institutions for Seismology
+  </title>
+  <meta content="7EaJTY_aGsxE5WHtWuLRnxXWpGYdFg4pp-fUs5MJmTw" name="google-site-verification"/>
+  <meta content="seismology, seismological data, earthquakes, iris dmc" name="keywords"/>
+  <meta content="5e9814e5c07e8c4febce2d95b1199ab2" name="p:domain_verify"/>
+  <meta content="IRIS is a consortium of universities dedicated to the
       operation of science facilities for the acquisition, management, and distribution of
-      seismological data.">
-    <!--[if lt IE 9]>
+      seismological data." name="description"/>
+  <!--[if lt IE 9]>
       <script src='http://dev.iris.edu/hq/_js/html5shiv' type="text/javascript"></script>
     <![endif]-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/2012.css">
-    <link rel="stylesheet" type="text/css" href="./css/hq-styles.css">
-    <link rel="stylesheet" type="text/css" href="./css/megamenu2.css">
-    <link rel="stylesheet" type="text/css" href="./css/nivo-slider.css">
-    <link rel="stylesheet" type="text/css" href="./css/consortium-page.css">
-    <link rel="stylesheet" href="./css/jquery-ui.css">
-    <script async="" src="./js/analytics.js"></script><script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery-ui.js"></script>
-    <script src="./js/cookie.jquery" type="text/javascript"></script>
-    <script src="./js/jquery.tools.min" type="text/javascript"></script>
-    <script src="./js/jquery.tablesorter.min" type="text/javascript"></script>
-  </head>
-  <body>
-    <div id="site-container">
-      <header>
-        <div id="header-container">
-          <div class="container">
-
-          <div id="header">
-            <div id="header-left">
-              <div id="logo">
-                <a href="http://dev.iris.edu/hq/" title="IRIS DEV">
-                  <img src="./images/iris_logo.png" alt="IRIS DEV">
-                </a>
-              </div>
-              <div id="toggle-mega-menu">
-                <button type="button" class="navbar-toggle collapsed" onclick="$(&#39;.nav_menu_container&#39;).slideToggle()">MENU</button>
-              </div>
-              <div id="logo-name">
-                Incorporated Research Institutions for Seismology
-              </div>
-            </div><!-- #header-left -->
-            <div id="header-right">
-              <ul id="top-menu">
-                <li>
-                  <a href="http://dev.iris.edu/hq/contact" title="Contact Us">Contact Us</a>
-
-                    &nbsp;|&nbsp;<a href="http://dev.iris.edu/hq/#" data-toggle="modal" data-target="#iris-staff-login">Login</a>
-
-                </li>
-                <li>
-                  <a href="http://dev.iris.edu/hq/programs/education_and_outreach/social_media" title="Social Media">
-                    <img src="./images/social-top.png" alt="Social Media">
-                  </a>
-                </li>
-                <li>
-                  <div class="search">
-                    <form action="http://dev.iris.edu/hq/search" method="get">
-                      <input type="hidden" name="cx" value="011835713541211780569:w8gihycyx-y">
-                      <input type="hidden" name="cof" value="FORID:9">
-                      <input type="hidden" name="ie" value="UTF-8">
-                      <div class="input-group">
-                        <input type="text" class="form-control" name="q" placeholder="Search for...">
-                        <span class="input-group-btn">
-                          <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                        </span>
-                      </div><!-- /input-group -->
-                    </form>
-                  </div><!-- .search -->
-                </li>
-              </ul>
-              <div id="nsf-logo">
-                <a href="http://www.nsf.gov/" title="The National Science Foundation" target="_blank">
-                  <img src="./images/nsf.png" alt="The National Science Foundation">
-                </a>
-              </div>
-              <div id="nsf">
-              </div><!-- #nsf -->
-            </div><!-- #header-right -->
-          </div><!-- #header -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="./css/2012.css" rel="stylesheet" type="text/css"/>
+  <link href="./css/hq-styles.css" rel="stylesheet" type="text/css"/>
+  <link href="./css/megamenu2.css" rel="stylesheet" type="text/css"/>
+  <link href="./css/nivo-slider.css" rel="stylesheet" type="text/css"/>
+  <link href="./css/consortium-page.css" rel="stylesheet" type="text/css"/>
+  <link href="./css/jquery-ui.css" rel="stylesheet"/>
+  <script async="" src="./js/analytics.js">
+  </script>
+  <script src="./js/jquery.min.js">
+  </script>
+  <script src="./js/bootstrap.min.js">
+  </script>
+  <script src="./js/jquery-ui.js">
+  </script>
+  <script src="./js/cookie.jquery" type="text/javascript">
+  </script>
+  <script src="./js/jquery.tools.min" type="text/javascript">
+  </script>
+  <script src="./js/jquery.tablesorter.min" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="site-container">
+   <header>
+    <div id="header-container">
+     <div class="container">
+      <div id="header">
+       <div id="header-left">
+        <div id="logo">
+         <a href="http://dev.iris.edu/hq/" title="IRIS DEV">
+          <img alt="IRIS DEV" src="./images/iris_logo.png"/>
+         </a>
+        </div>
+        <div id="toggle-mega-menu">
+         <button class="navbar-toggle collapsed" onclick="$('.nav_menu_container').slideToggle()" type="button">
+          MENU
+         </button>
+        </div>
+        <div id="logo-name">
+         Incorporated Research Institutions for Seismology
+        </div>
+       </div>
+       <!-- #header-left -->
+       <div id="header-right">
+        <ul id="top-menu">
+         <li>
+          <a href="http://dev.iris.edu/hq/contact" title="Contact Us">
+           Contact Us
+          </a>
+          |
+          <a data-target="#iris-staff-login" data-toggle="modal" href="http://dev.iris.edu/hq/#">
+           Login
+          </a>
+         </li>
+         <li>
+          <a href="http://dev.iris.edu/hq/programs/education_and_outreach/social_media" title="Social Media">
+           <img alt="Social Media" src="./images/social-top.png"/>
+          </a>
+         </li>
+         <li>
+          <div class="search">
+           <form action="http://dev.iris.edu/hq/search" method="get">
+            <input name="cx" type="hidden" value="011835713541211780569:w8gihycyx-y"/>
+            <input name="cof" type="hidden" value="FORID:9"/>
+            <input name="ie" type="hidden" value="UTF-8"/>
+            <div class="input-group">
+             <input class="form-control" name="q" placeholder="Search for..." type="text"/>
+             <span class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+               <i class="glyphicon glyphicon-search">
+               </i>
+              </button>
+             </span>
+            </div>
+            <!-- /input-group -->
+           </form>
           </div>
-          </div><!-- #header-container -->
-          <!--Iris only meny  -->
-        </header>
-        <div class="container">
-
-
-
-
-        <div class="wrapper">
-        <!-- START: NAV -->
-        <nav>
-          <div class="nav_menu_container"><!-- Begin Menu Container -->
-            <ul class="nav_menu clearfix"><!-- Begin Mega Menu -->
-              <li><a class="nav_menu_drop" href="http://dev.iris.edu/hq/#" title="Research"><h4>RESEARCH</h4><small>Data, derived products,<br>software, web services</small></a><!-- Begin Item -->
-                <div class="nav_menu_dropdown_container">
-                  <div class="nav_menu_dropdown row"><!-- Begin Item Container -->
-                    <div class="col-sm-3">
-                      <h3>IRIS ingests, curates, and distributes geoscience data</h3>
-                      <p>IRIS provides management of, and access to, observed
-                      and derived data for the global earth science community.</p>
-                      <p>This includes ground motion, atmospheric, infrasonic,
-                      hydrological, and hydroacoustic data.</p>
-                    </div>
-                    <div class="col-sm-3">
-                      <h4>DATA AT IRIS</h4>
-                      <ul>
-                        <li><a href="http://ds.iris.edu/ds/nodes/dmc/data/types/">Types of Observational Data</a></li>
-                        <li><a href="http://ds.iris.edu/ds/products/">Derived Data Products</a></li>
-                      </ul>
-                      <h4>DATA INGESTION</h4>
-                      <ul>
-                        <li><a href="http://ds.iris.edu/ds/nodes/dmc/data/#submitting">Submitting Data to IRIS</a></li>
-                      </ul>
-                      <h4>DATA ANALYTICS</h4>
-                      <ul>
-                        <li><a href="http://ds.iris.edu/ds/nodes/dmc/quality-assurance/">Quality Assurance</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-3">
-                      <h4>DATA ACCESS</h4>
-                      <ul>
-                        <li><a href="http://ds.iris.edu/ds/nodes/dmc/tools/">Data Tool Matrix</a></li>
-                        <li><a href="http://ds.iris.edu/ds/nodes/dmc/data/#requests">Requesting Data from IRIS</a></li>
-                        <li><h5>Requesting Observational Data</h5>
-                          <ul>
-                            <li>– <a href="http://ds.iris.edu/ds/nodes/dmc/manuals/breq_fast/">Batch Request Tools</a></li>
-                            <li>– <a href="http://ds.iris.edu/ds/nodes/dmc/services/seedlink/">Realtime Data Access</a></li>
-                            <li>– <a href="http://service.iris.edu/">Web Services</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="http://ds.iris.edu/spud/">Requesting Derived Data Products</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-3">
-                      <h4>DOWNLOADABLE SOFTWARE</h4>
-                      <ul>
-                        <li><a href="http://ds.iris.edu/ds/nodes/dmc/software/downloads/">IRIS Authored Software</a></li>
-                        <li><a href="http://seiscode.iris.washington.edu/">Community Authored Software</a></li>
-                      </ul>
-                      <h4>SUPPORT</h4>
-                      <ul>
-                        <li><a href="http://ds.iris.edu/ds/nodes/dmc/kb/">Knowledge Base</a></li>
-                        <li><a href="http://dev.iris.edu/hq/about_iris/mailing_lists">Mailing Lists</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              <!-- End Item Container -->
+          <!-- .search -->
+         </li>
+        </ul>
+        <div id="nsf-logo">
+         <a href="http://www.nsf.gov/" target="_blank" title="The National Science Foundation">
+          <img alt="The National Science Foundation" src="./images/nsf.png"/>
+         </a>
+        </div>
+        <div id="nsf">
+        </div>
+        <!-- #nsf -->
+       </div>
+       <!-- #header-right -->
+      </div>
+      <!-- #header -->
+     </div>
+    </div>
+    <!-- #header-container -->
+    <!--Iris only meny  -->
+   </header>
+   <div class="container">
+    <div class="wrapper">
+     <!-- START: NAV -->
+     <nav>
+      <div class="nav_menu_container">
+       <!-- Begin Menu Container -->
+       <ul class="nav_menu clearfix">
+        <!-- Begin Mega Menu -->
+        <li>
+         <a class="nav_menu_drop" href="http://dev.iris.edu/hq/#" title="Research">
+          <h4>
+           RESEARCH
+          </h4>
+          <small>
+           Data, derived products,
+           <br/>
+           software, web services
+          </small>
+         </a>
+         <!-- Begin Item -->
+         <div class="nav_menu_dropdown_container">
+          <div class="nav_menu_dropdown row">
+           <!-- Begin Item Container -->
+           <div class="col-sm-3">
+            <h3>
+             IRIS ingests, curates, and distributes geoscience data
+            </h3>
+            <p>
+             IRIS provides management of, and access to, observed
+                      and derived data for the global earth science community.
+            </p>
+            <p>
+             This includes ground motion, atmospheric, infrasonic,
+                      hydrological, and hydroacoustic data.
+            </p>
+           </div>
+           <div class="col-sm-3">
+            <h4>
+             DATA AT IRIS
+            </h4>
+            <ul>
+             <li>
+              <a href="http://ds.iris.edu/ds/nodes/dmc/data/types/">
+               Types of Observational Data
+              </a>
+             </li>
+             <li>
+              <a href="http://ds.iris.edu/ds/products/">
+               Derived Data Products
+              </a>
+             </li>
+            </ul>
+            <h4>
+             DATA INGESTION
+            </h4>
+            <ul>
+             <li>
+              <a href="http://ds.iris.edu/ds/nodes/dmc/data/#submitting">
+               Submitting Data to IRIS
+              </a>
+             </li>
+            </ul>
+            <h4>
+             DATA ANALYTICS
+            </h4>
+            <ul>
+             <li>
+              <a href="http://ds.iris.edu/ds/nodes/dmc/quality-assurance/">
+               Quality Assurance
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col-sm-3">
+            <h4>
+             DATA ACCESS
+            </h4>
+            <ul>
+             <li>
+              <a href="http://ds.iris.edu/ds/nodes/dmc/tools/">
+               Data Tool Matrix
+              </a>
+             </li>
+             <li>
+              <a href="http://ds.iris.edu/ds/nodes/dmc/data/#requests">
+               Requesting Data from IRIS
+              </a>
+             </li>
+             <li>
+              <h5>
+               Requesting Observational Data
+              </h5>
+              <ul>
+               <li>
+                –
+                <a href="http://ds.iris.edu/ds/nodes/dmc/manuals/breq_fast/">
+                 Batch Request Tools
+                </a>
+               </li>
+               <li>
+                –
+                <a href="http://ds.iris.edu/ds/nodes/dmc/services/seedlink/">
+                 Realtime Data Access
+                </a>
+               </li>
+               <li>
+                –
+                <a href="http://service.iris.edu/">
+                 Web Services
+                </a>
+               </li>
+              </ul>
+             </li>
+             <li>
+              <a href="http://ds.iris.edu/spud/">
+               Requesting Derived Data Products
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col-sm-3">
+            <h4>
+             DOWNLOADABLE SOFTWARE
+            </h4>
+            <ul>
+             <li>
+              <a href="http://ds.iris.edu/ds/nodes/dmc/software/downloads/">
+               IRIS Authored Software
+              </a>
+             </li>
+             <li>
+              <a href="http://seiscode.iris.washington.edu/">
+               Community Authored Software
+              </a>
+             </li>
+            </ul>
+            <h4>
+             SUPPORT
+            </h4>
+            <ul>
+             <li>
+              <a href="http://ds.iris.edu/ds/nodes/dmc/kb/">
+               Knowledge Base
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/mailing_lists">
+               Mailing Lists
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+         <!-- End Item Container -->
+        </li>
+        <li>
+         <a class="nav_menu_drop" href="http://dev.iris.edu/hq/#">
+          <h4>
+           EDUCATION
+          </h4>
+          <small>
+           Lessons, lectures,
+           <br/>
+           videos, public displays
+          </small>
+         </a>
+         <!-- Begin Item -->
+         <div class="nav_menu_dropdown_container">
+          <div class="nav_menu_dropdown row">
+           <!-- Begin Item Container -->
+           <div class="col-sm-4">
+            <h3>
+             IRIS provides a wide range of education and outreach resources
+            </h3>
+            <p>
+             Our mission is to advance awareness and understanding of seismology
+                      and earth science while inspiring careers in geophysics.
+            </p>
+           </div>
+           <div class="col-sm-4">
+            <h4>
+             LEARNING &amp; TEACHING RESOURCES
+            </h4>
+            <img class="block-left img-thumbnail" src="./images/seismon.jpg"/>
+            <div class="block-right">
+             <ul>
+              <li>
+               <a href="http://dev.iris.edu/hq/retm/">
+                Recent Earthquakes Teachable Moments
+               </a>
               </li>
-              <li><a class="nav_menu_drop" href="http://dev.iris.edu/hq/#"><h4>EDUCATION</h4><small>Lessons, lectures,<br>videos, public displays</small></a><!-- Begin Item -->
-                <div class="nav_menu_dropdown_container">
-                  <div class="nav_menu_dropdown row"><!-- Begin Item Container -->
-                    <div class="col-sm-4">
-                      <h3>IRIS provides a wide range of education and outreach resources</h3>
-                      <p>Our mission is to advance awareness and understanding of seismology
-                      and earth science while inspiring careers in geophysics.</p>
-                    </div>
-                    <div class="col-sm-4">
-                      <h4>LEARNING &amp; TEACHING RESOURCES</h4>
-                      <img src="./images/seismon.jpg" class="block-left img-thumbnail">
-                      <div class="block-right">
-                        <ul>
-                          <li><a href="http://dev.iris.edu/hq/retm/">Recent Earthquakes Teachable Moments</a></li>
-                          <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/resources">Lessons/Demonstrations</a></li>
-                          <li><a href="http://dev.iris.edu/hq/inclass/search/software-web-app">Educational Software/Webtools</a></li>
-                          <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/animations">Animations</a></li>
-                          <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/videos">Videos</a></li>
-                          <li><a href="http://dev.iris.edu/hq/inclass/search/poster">Posters</a></li>
-                          <li><a href="http://dev.iris.edu/hq/inclass/search/fact-sheet">Fact Sheets</a></li>
-                          <li><a href="http://dev.iris.edu/hq/sis/">Educational Seismographs</a></li>
-                        </ul>
-                      </div>
-                      <h4>EXPLORE EARTHQUAKE DATA</h4>
-                      <img src="./images/waves.jpg" class="block-left img-thumbnail">
-                      <div class="block-right">
-                        <ul>
-                          <li><a href="http://ds.iris.edu/seismon/">Recent Earthquakes</a></li>
-                          <li><a href="http://ds.iris.edu/ieb/">Earthquake Browser</a></li>
-                          <li><a href="http://rev.seis.sc.edu/">View Seismograms</a></li>
-                          <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/visualizations">Wave Visualizations</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <h4>PUBLIC OUTREACH</h4>
-                      <img src="./images/display.jpg" class="block-left img-thumbnail">
-                      <div class="block-right block-bottom">
-                        <ul>
-                          <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/museum_displays">Public Displays</a></li>
-                          <li><a href="http://dev.iris.edu/hq/programs/epo/distinguished_lectureship">Distinguished Lectures</a></li>
-                        </ul>
-                      </div>
-                      <h4>LEARNING OPPORTUNITIES</h4>
-                      <img src="./images/learning.jpg" class="block-left img-thumbnail">
-                      <div class="block-right">
-                        <ul>
-                          <li><a href="http://dev.iris.edu/hq/internship/">Student Internships</a></li>
-                          <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/professional_development/">Teacher Professional Development</a></li>
-                          <li><a href="http://dev.iris.edu/hq/webinar/">Webinars</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Item Container -->
+              <li>
+               <a href="http://dev.iris.edu/hq/programs/education_and_outreach/resources">
+                Lessons/Demonstrations
+               </a>
               </li>
-              <li><a class="nav_menu_drop" href="http://dev.iris.edu/hq/#"><h4>FACILITIES</h4><small>Directorates, programs,<br>networks, centers</small></a>
-                <div class="nav_menu_dropdown_container">
-                  <div class="nav_menu_dropdown row"><!-- Begin Item Container -->
-                    <div class="col-sm-4">
-                      <h3>IRIS operates many prominent geophysical facilities</h3>
-                      <p>IRIS staff and subawardees oversee the construction,
+              <li>
+               <a href="http://dev.iris.edu/hq/inclass/search/software-web-app">
+                Educational Software/Webtools
+               </a>
+              </li>
+              <li>
+               <a href="http://dev.iris.edu/hq/programs/education_and_outreach/animations">
+                Animations
+               </a>
+              </li>
+              <li>
+               <a href="http://dev.iris.edu/hq/programs/education_and_outreach/videos">
+                Videos
+               </a>
+              </li>
+              <li>
+               <a href="http://dev.iris.edu/hq/inclass/search/poster">
+                Posters
+               </a>
+              </li>
+              <li>
+               <a href="http://dev.iris.edu/hq/inclass/search/fact-sheet">
+                Fact Sheets
+               </a>
+              </li>
+              <li>
+               <a href="http://dev.iris.edu/hq/sis/">
+                Educational Seismographs
+               </a>
+              </li>
+             </ul>
+            </div>
+            <h4>
+             EXPLORE EARTHQUAKE DATA
+            </h4>
+            <img class="block-left img-thumbnail" src="./images/waves.jpg"/>
+            <div class="block-right">
+             <ul>
+              <li>
+               <a href="http://ds.iris.edu/seismon/">
+                Recent Earthquakes
+               </a>
+              </li>
+              <li>
+               <a href="http://ds.iris.edu/ieb/">
+                Earthquake Browser
+               </a>
+              </li>
+              <li>
+               <a href="http://rev.seis.sc.edu/">
+                View Seismograms
+               </a>
+              </li>
+              <li>
+               <a href="http://dev.iris.edu/hq/programs/education_and_outreach/visualizations">
+                Wave Visualizations
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+           <div class="col-sm-4">
+            <h4>
+             PUBLIC OUTREACH
+            </h4>
+            <img class="block-left img-thumbnail" src="./images/display.jpg"/>
+            <div class="block-right block-bottom">
+             <ul>
+              <li>
+               <a href="http://dev.iris.edu/hq/programs/education_and_outreach/museum_displays">
+                Public Displays
+               </a>
+              </li>
+              <li>
+               <a href="http://dev.iris.edu/hq/programs/epo/distinguished_lectureship">
+                Distinguished Lectures
+               </a>
+              </li>
+             </ul>
+            </div>
+            <h4>
+             LEARNING OPPORTUNITIES
+            </h4>
+            <img class="block-left img-thumbnail" src="./images/learning.jpg"/>
+            <div class="block-right">
+             <ul>
+              <li>
+               <a href="http://dev.iris.edu/hq/internship/">
+                Student Internships
+               </a>
+              </li>
+              <li>
+               <a href="http://dev.iris.edu/hq/programs/education_and_outreach/professional_development/">
+                Teacher Professional Development
+               </a>
+              </li>
+              <li>
+               <a href="http://dev.iris.edu/hq/webinar/">
+                Webinars
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </div>
+         <!-- End Item Container -->
+        </li>
+        <li>
+         <a class="nav_menu_drop" href="http://dev.iris.edu/hq/#">
+          <h4>
+           FACILITIES
+          </h4>
+          <small>
+           Directorates, programs,
+           <br/>
+           networks, centers
+          </small>
+         </a>
+         <div class="nav_menu_dropdown_container">
+          <div class="nav_menu_dropdown row">
+           <!-- Begin Item Container -->
+           <div class="col-sm-4">
+            <h3>
+             IRIS operates many prominent geophysical facilities
+            </h3>
+            <p>
+             IRIS staff and subawardees oversee the construction,
                       operation, and maintenance of seismic networks
                       and related data facilities utilized
-                      by a wide sector of the earth science community.</p>
-                      <p><a href="http://dev.iris.edu/hq/about_iris/governance/">IRIS consists of three directorates</a>:
-                      <a href="http://dev.iris.edu/hq/programs/is">Instrumentation Services (IS)</a>,
-                      <a href="http://ds.iris.edu/ds">Data Services (DS)</a>, and
-                      <a href="http://dev.iris.edu/hq/programs/epo">Education &amp; Public Outreach (EPO)</a>.
-                      Each directorate consists of various programs listed to the right.</p>
-                    </div>
-                    <div class="col-sm-4">
-                      <h4><a href="http://dev.iris.edu/hq/programs/is">INSTRUMENTATION SERVICES</a></h4>
-                      <ul>
-                        <li><a href="http://dev.iris.edu/hq/programs/gsn">Global Seismographic Network (GSN)</a></li>
-                        <li><a href="http://dev.iris.edu/hq/programs/passcal">Portable Networks (PASSCAL)</a></li>
-                        <li><a href="http://www.obsip.org/">Ocean Bottom Seismograph Instrument Pool (OBSIP)</a></li>
-                        <li><a href="http://www.usarray.org/">Transportable Array (TA)</a></li>
-                        <li><a href="http://www.usarray.org/researchers/obs/magnetotelluric">Magnetotelluric Array (MT)</a></li>
-                        <li><a href="http://dev.iris.edu/hq/programs/polar">Polar Programs (POLAR)</a></li>
-                        <li><a href="http://dev.iris.edu/hq/programs/glisn">Greenland Ice Sheet Monitoring Network (GLISN)</a></li>
-                        <li><a href="http://dev.iris.edu/hq/projects/chile">Global Reporting Observatories in Chile (GRO-Chile)</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-sm-4">
-                      <h4><a href="http://ds.iris.edu/ds">DATA SERVICES</a></h4>
-                      <ul>
-                        <li><a href="http://ds.iris.edu/ds/nodes/dmc">Data Management Center (DMC)</a></li>
-                        <li><a href="http://ds.iris.edu/ds/nodes/">Data Collection Centers (DCCs)</a></li>
-                      </ul>
-                      <h4><a href="http://dev.iris.edu/hq/programs/epo">EDUCATION &amp; PUBLIC OUTREACH</a></h4>
-                      <ul>
-                        <li><a href="http://dev.iris.edu/hq/programs/epo#explore">Explore Earthquake Data</a></li>
-                        <li><a href="http://dev.iris.edu/hq/programs/epo#learning">Learning/Teaching Resources</a></li>
-                        <li><a href="http://dev.iris.edu/hq/programs/epo#opportunities">Learning Opportunities</a></li>
-                        <li><a href="http://dev.iris.edu/hq/programs/epo#outreach">Public Outreach</a></li>
-                      </ul>
-                      <h4><a href="http://dev.iris.edu/hq/about_iris/governance/ids">INTERNATIONAL DEVELOPMENT SEISMOLOGY (IDS)</a></h4>
-                    </div>
-                  </div>
-                </div><!-- End Item Container -->
+                      by a wide sector of the earth science community.
+            </p>
+            <p>
+             <a href="http://dev.iris.edu/hq/about_iris/governance/">
+              IRIS consists of three directorates
+             </a>
+             :
+             <a href="http://dev.iris.edu/hq/programs/is">
+              Instrumentation Services (IS)
+             </a>
+             ,
+             <a href="http://ds.iris.edu/ds">
+              Data Services (DS)
+             </a>
+             , and
+             <a href="http://dev.iris.edu/hq/programs/epo">
+              Education &amp; Public Outreach (EPO)
+             </a>
+             .
+                      Each directorate consists of various programs listed to the right.
+            </p>
+           </div>
+           <div class="col-sm-4">
+            <h4>
+             <a href="http://dev.iris.edu/hq/programs/is">
+              INSTRUMENTATION SERVICES
+             </a>
+            </h4>
+            <ul>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/gsn">
+               Global Seismographic Network (GSN)
+              </a>
              </li>
-             <li><a class="nav_menu_drop" href="http://dev.iris.edu/hq/#"><h4>EARTHQUAKES</h4><small>Recent earthquakes,<br>teachable moments</small></a><!-- Begin Item -->
-               <div class="nav_menu_dropdown_container">
-                 <div class="nav_menu_dropdown row"><!-- Begin Item Container -->
-                   <div class="col-sm-3">
-                     <h3>Explore the world of earthquakes!</h3>
-                     <p>IRIS has multiple online tools that allow you
-                     to learn about global and regional seismicity.</p>
-                   </div>
-                   <div class="col-sm-9">
-                     <ul>
-                       <li><a href="http://ds.iris.edu/seismon">Recent Earthquake Map</a></li>
-                       <li><a href="http://ds.iris.edu/ieb">Interactive Earthquake Browser (IEB)</a></li>
-                       <li><a href="http://dev.iris.edu/hq/retm/">Recent Earthquake Teachable Moments (RETM)</a></li>
-                       <li><a href="http://rev.seis.sc.edu/">View Seismograms</a></li>
-                       <li><a href="http://ds.iris.edu/ds/nodes/dmc/specialevents/">Special Events Page</a></li>
-                     </ul>
-                   </div>
-                 </div>
-               </div><!-- End Item Container -->
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/passcal">
+               Portable Networks (PASSCAL)
+              </a>
              </li>
-             <li><a class="nav_menu_drop" href="http://dev.iris.edu/hq/#"><h4>ABOUT IRIS</h4><small>Organization, governance,<br>news, jobs, annual reports</small></a><!-- Begin Item -->
-               <div class="nav_menu_dropdown_container">
-                 <div class="nav_menu_dropdown row"><!-- Begin Item Container -->
-                   <div class="col-sm-4">
-                     <h3>Information about the IRIS organization and for IRIS Consortium members</h3>
-                     <p>IRIS is a consortium of over 120 US universities dedicated
+             <li>
+              <a href="http://www.obsip.org/">
+               Ocean Bottom Seismograph Instrument Pool (OBSIP)
+              </a>
+             </li>
+             <li>
+              <a href="http://www.usarray.org/">
+               Transportable Array (TA)
+              </a>
+             </li>
+             <li>
+              <a href="http://www.usarray.org/researchers/obs/magnetotelluric">
+               Magnetotelluric Array (MT)
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/polar">
+               Polar Programs (POLAR)
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/glisn">
+               Greenland Ice Sheet Monitoring Network (GLISN)
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/projects/chile">
+               Global Reporting Observatories in Chile (GRO-Chile)
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col-sm-4">
+            <h4>
+             <a href="http://ds.iris.edu/ds">
+              DATA SERVICES
+             </a>
+            </h4>
+            <ul>
+             <li>
+              <a href="http://ds.iris.edu/ds/nodes/dmc">
+               Data Management Center (DMC)
+              </a>
+             </li>
+             <li>
+              <a href="http://ds.iris.edu/ds/nodes/">
+               Data Collection Centers (DCCs)
+              </a>
+             </li>
+            </ul>
+            <h4>
+             <a href="http://dev.iris.edu/hq/programs/epo">
+              EDUCATION &amp; PUBLIC OUTREACH
+             </a>
+            </h4>
+            <ul>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/epo#explore">
+               Explore Earthquake Data
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/epo#learning">
+               Learning/Teaching Resources
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/epo#opportunities">
+               Learning Opportunities
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/epo#outreach">
+               Public Outreach
+              </a>
+             </li>
+            </ul>
+            <h4>
+             <a href="http://dev.iris.edu/hq/about_iris/governance/ids">
+              INTERNATIONAL DEVELOPMENT SEISMOLOGY (IDS)
+             </a>
+            </h4>
+           </div>
+          </div>
+         </div>
+         <!-- End Item Container -->
+        </li>
+        <li>
+         <a class="nav_menu_drop" href="http://dev.iris.edu/hq/#">
+          <h4>
+           EARTHQUAKES
+          </h4>
+          <small>
+           Recent earthquakes,
+           <br/>
+           teachable moments
+          </small>
+         </a>
+         <!-- Begin Item -->
+         <div class="nav_menu_dropdown_container">
+          <div class="nav_menu_dropdown row">
+           <!-- Begin Item Container -->
+           <div class="col-sm-3">
+            <h3>
+             Explore the world of earthquakes!
+            </h3>
+            <p>
+             IRIS has multiple online tools that allow you
+                     to learn about global and regional seismicity.
+            </p>
+           </div>
+           <div class="col-sm-9">
+            <ul>
+             <li>
+              <a href="http://ds.iris.edu/seismon">
+               Recent Earthquake Map
+              </a>
+             </li>
+             <li>
+              <a href="http://ds.iris.edu/ieb">
+               Interactive Earthquake Browser (IEB)
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/retm/">
+               Recent Earthquake Teachable Moments (RETM)
+              </a>
+             </li>
+             <li>
+              <a href="http://rev.seis.sc.edu/">
+               View Seismograms
+              </a>
+             </li>
+             <li>
+              <a href="http://ds.iris.edu/ds/nodes/dmc/specialevents/">
+               Special Events Page
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+         <!-- End Item Container -->
+        </li>
+        <li>
+         <a class="nav_menu_drop" href="http://dev.iris.edu/hq/#">
+          <h4>
+           ABOUT IRIS
+          </h4>
+          <small>
+           Organization, governance,
+           <br/>
+           news, jobs, annual reports
+          </small>
+         </a>
+         <!-- Begin Item -->
+         <div class="nav_menu_dropdown_container">
+          <div class="nav_menu_dropdown row">
+           <!-- Begin Item Container -->
+           <div class="col-sm-4">
+            <h3>
+             Information about the IRIS organization and for IRIS Consortium members
+            </h3>
+            <p>
+             IRIS is a consortium of over 120 US universities dedicated
                      to the operation of science facilities for the acquisition,
-                     management, and distribution of seismological data.</p>
-                     <p>IRIS is a 501 (c) (3) nonprofit organization incorporated
+                     management, and distribution of seismological data.
+            </p>
+            <p>
+             IRIS is a 501 (c) (3) nonprofit organization incorporated
                      in the state of Delaware with its primary headquarters office
-                     located in Washington, DC. IRIS is governed according to By-laws.</p>
-                   </div>
-                   <div class="col-sm-4">
-                     <h4>IRIS ORGANIZATION</h4>
-                     <ul>
-                       <li><a href="http://dev.iris.edu/hq/about_iris#vision">Vision/Mission</a> | <a href="http://dev.iris.edu/hq/files/publications/annual_reports/IRIS_Strategic_Plan.pdf">Strategic Plan</a></li>
-                       <li><a href="http://dev.iris.edu/hq/about_iris/membership">Membership</a></li>
-                       <li><a href="http://dev.iris.edu/hq/about_iris/governance/">Governance</a> | <a href="http://dev.iris.edu/hq/audience/committees/bylaws">By–Laws</a></li>
-                       <li>
-                         <a href="http://dev.iris.edu/hq/about_iris/policies_and_procedures"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>Policies and Procedures</a>
-                       </li>
-                       <li>
-                         <a href="http://dev.iris.edu/hq/about_iris/account_codes"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>Awards and Budget Codes</a>
-                       </li>
-                       <li><h5>Standing Committees</h5>
-                         <ul>
-                           <li>– <a href="http://dev.iris.edu/hq/meeting_report/">Meeting Reports</a></li>
-                           <li>– <a href="http://dev.iris.edu/hq/about_iris/committee/">Secure Meetings/Documents</a></li>
-                         </ul>
-                       </li>
-                       <li><a href="http://dev.iris.edu/hq/staff">Staff</a> | <a href="http://dev.iris.edu/hq/staff/chart">Org. Chart</a> | <a href="http://dev.iris.edu/hq/employment#internal">Employment at IRIS</a></li>
-                       <li><a href="http://dev.iris.edu/hq/publications/annual_reports">Annual Reports</a> | <a href="http://dev.iris.edu/hq/multimedia/logos">Logos</a> | <a href="http://dev.iris.edu/hq/iris_citations#citation-list">Citations</a></li>
-                       <li><a href="http://dev.iris.edu/hq/contact">Contact Us</a> | <a href="http://dev.iris.edu/hq/about_iris/travel_tips/headquarters">Directions</a></li>
-                     </ul>
-                   </div>
-                   <div class="col-sm-4">
-                     <h4>IRIS CONSORTIUM</h4>
-                     <ul>
-                       <li><a href="http://dev.iris.edu/hq/news">News</a></li>
-                       <li><a href="http://dev.iris.edu/hq/community">Community page</a></li>
-                       <li><a href="http://dev.iris.edu/hq/about_iris/membership/become_a_member">Becoming a member</a></li>
-                       <li><a href="http://dev.iris.edu/hq/about_iris/membership">Types of membership</a></li>
-                       <li><a href="http://dev.iris.edu/hq/about_iris/membership/map">Map of current members</a></li>
-                       <li><a href="http://dev.iris.edu/hq/iris_citations#citation-howto">How to cite IRIS</a></li>
-                       <li><a href="http://dev.iris.edu/hq/employment#external">Community Jobs</a></li>
-                       <li><a href="http://dev.iris.edu/hq/about_iris/mailing_lists">Mailing Lists</a></li>
-                       <li><a href="http://dev.iris.edu/hq/about_iris/faqs">FAQs</a></li>
-                       <li><a href="http://dev.iris.edu/hq/about_iris/travel_tips">Travel Tips</a> | <a href="http://dev.iris.edu/hq/about_iris/travel_tips/headquarters">Directions</a></li>
-                       <li><a href="http://dev.iris.edu/hq/search/">Search</a></li>
-                     </ul>
-                   </div>
-                 </div>
-               </div><!-- End Item Container -->
+                     located in Washington, DC. IRIS is governed according to By-laws.
+            </p>
+           </div>
+           <div class="col-sm-4">
+            <h4>
+             IRIS ORGANIZATION
+            </h4>
+            <ul>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris#vision">
+               Vision/Mission
+              </a>
+              |
+              <a href="http://dev.iris.edu/hq/files/publications/annual_reports/IRIS_Strategic_Plan.pdf">
+               Strategic Plan
+              </a>
              </li>
-             <li class="nav_menu_right"><a class="nav_menu_drop" href="http://dev.iris.edu/hq/#"><h4>RESOURCES</h4><small>Publications, webinars, posters,<br>newsletters, proposals</small></a><!-- Begin Item -->
-               <div class="nav_menu_dropdown_container">
-                 <div class="nav_menu_dropdown row"><!-- Begin Item Container -->
-                   <div class="col-sm-4">
-                     <h3>Digital &amp; print resources available</h3>
-                     <p>IRIS offers a variety of resources for the
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/membership">
+               Membership
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/governance/">
+               Governance
+              </a>
+              |
+              <a href="http://dev.iris.edu/hq/audience/committees/bylaws">
+               By–Laws
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/policies_and_procedures">
+               <span aria-hidden="true" class="glyphicon glyphicon-lock">
+               </span>
+               Policies and Procedures
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/account_codes">
+               <span aria-hidden="true" class="glyphicon glyphicon-lock">
+               </span>
+               Awards and Budget Codes
+              </a>
+             </li>
+             <li>
+              <h5>
+               Standing Committees
+              </h5>
+              <ul>
+               <li>
+                –
+                <a href="http://dev.iris.edu/hq/meeting_report/">
+                 Meeting Reports
+                </a>
+               </li>
+               <li>
+                –
+                <a href="http://dev.iris.edu/hq/about_iris/committee/">
+                 Secure Meetings/Documents
+                </a>
+               </li>
+              </ul>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/staff">
+               Staff
+              </a>
+              |
+              <a href="http://dev.iris.edu/hq/staff/chart">
+               Org. Chart
+              </a>
+              |
+              <a href="http://dev.iris.edu/hq/employment#internal">
+               Employment at IRIS
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/publications/annual_reports">
+               Annual Reports
+              </a>
+              |
+              <a href="http://dev.iris.edu/hq/multimedia/logos">
+               Logos
+              </a>
+              |
+              <a href="http://dev.iris.edu/hq/iris_citations#citation-list">
+               Citations
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/contact">
+               Contact Us
+              </a>
+              |
+              <a href="http://dev.iris.edu/hq/about_iris/travel_tips/headquarters">
+               Directions
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col-sm-4">
+            <h4>
+             IRIS CONSORTIUM
+            </h4>
+            <ul>
+             <li>
+              <a href="http://dev.iris.edu/hq/news">
+               News
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/community">
+               Community page
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/membership/become_a_member">
+               Becoming a member
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/membership">
+               Types of membership
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/membership/map">
+               Map of current members
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/iris_citations#citation-howto">
+               How to cite IRIS
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/employment#external">
+               Community Jobs
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/mailing_lists">
+               Mailing Lists
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/faqs">
+               FAQs
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/about_iris/travel_tips">
+               Travel Tips
+              </a>
+              |
+              <a href="http://dev.iris.edu/hq/about_iris/travel_tips/headquarters">
+               Directions
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/search/">
+               Search
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+         <!-- End Item Container -->
+        </li>
+        <li class="nav_menu_right">
+         <a class="nav_menu_drop" href="http://dev.iris.edu/hq/#">
+          <h4>
+           RESOURCES
+          </h4>
+          <small>
+           Publications, webinars, posters,
+           <br/>
+           newsletters, proposals
+          </small>
+         </a>
+         <!-- Begin Item -->
+         <div class="nav_menu_dropdown_container">
+          <div class="nav_menu_dropdown row">
+           <!-- Begin Item Container -->
+           <div class="col-sm-4">
+            <h3>
+             Digital &amp; print resources available
+            </h3>
+            <p>
+             IRIS offers a variety of resources for the
                      seismological community and general public
                      including online interactive materials,
                      regular newsletters, brochures,
                      webinars, past event materials. We also offer
                      digital copies of our proposals and reviews
-                     for download.</p>
-                   </div>
-                   <div class="col-sm-4">
-                     <h4><a href="http://dev.iris.edu/hq/publications">Publications</a></h4>
-                     <ul>
-                       <li><a href="http://dev.iris.edu/hq/publications/annual_reports">Annual Reports</a></li>
-                       <li><a href="http://dev.iris.edu/hq/publications/brochures_and_onepagers">Brochures and Information Sheets</a></li>
-                       <li><a href="http://dev.iris.edu/hq/publications/newsletters/iris">Newsletters</a></li>
-                       <li><a href="http://dev.iris.edu/hq/publications/proposals_and_reviews">Proposals and Reviews</a></li>
-                       <li><a href="http://dev.iris.edu/hq/publications/meeting_materials">Workshop and Meeting Reports</a></li>
-                       <li><a href="http://www.usarray.org/researchers/pubs">USArray and EarthScope Publications</a></li>
-                       <li><a href="http://dev.iris.edu/hq/inclass/search/poster">Posters</a></li>
-                     </ul>
-                     <h4>Events</h4>
-                     <ul>
-                       <li><a href="http://dev.iris.edu/hq/workshops/">Workshops</a> | <a href="http://dev.iris.edu/hq/short-courses/">Short Courses</a></li>
-                       <li><a href="http://dev.iris.edu/hq/webinar/">Webinars</a> | <a href="http://dev.iris.edu/hq/event/">Other</a> </li>
-                       <li><a href="http://dev.iris.edu/hq/calendar/">Calendar</a></li>
-                     </ul>
-                   </div>
-                   <div class="col-sm-4">
-                     <h4>Educational Resources</h4>
-                     <ul>
-                       <li><a href="http://dev.iris.edu/hq/retm/">Teachable Moments</a></li>
-                       <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/resources">For The Classroom</a></li>
-                       <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/videos">Video Lecture Series</a></li>
-                       <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/museum_displays/">Public Displays</a></li>
-                       <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/animations">Animations</a></li>
-                       <li><a href="http://dev.iris.edu/hq/sis">Seismographs in Schools</a></li>
-                       <li><a href="http://rev.seis.sc.edu/">Seismogram Viewer</a></li>
-                       <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/visualizations">USArray Wave Visualizations</a></li>
-                       <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/professional_development/">Teacher Professional Development</a></li>
-                       <li><a href="http://www.iris.edu/gallery3/">Image Gallery</a></li>
-                     </ul>
-                   </div>
-                 </div>
-               </div><!-- End Item Container -->
+                     for download.
+            </p>
+           </div>
+           <div class="col-sm-4">
+            <h4>
+             <a href="http://dev.iris.edu/hq/publications">
+              Publications
+             </a>
+            </h4>
+            <ul>
+             <li>
+              <a href="http://dev.iris.edu/hq/publications/annual_reports">
+               Annual Reports
+              </a>
              </li>
-
-           </ul>
+             <li>
+              <a href="http://dev.iris.edu/hq/publications/brochures_and_onepagers">
+               Brochures and Information Sheets
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/publications/newsletters/iris">
+               Newsletters
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/publications/proposals_and_reviews">
+               Proposals and Reviews
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/publications/meeting_materials">
+               Workshop and Meeting Reports
+              </a>
+             </li>
+             <li>
+              <a href="http://www.usarray.org/researchers/pubs">
+               USArray and EarthScope Publications
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/inclass/search/poster">
+               Posters
+              </a>
+             </li>
+            </ul>
+            <h4>
+             Events
+            </h4>
+            <ul>
+             <li>
+              <a href="http://dev.iris.edu/hq/workshops/">
+               Workshops
+              </a>
+              |
+              <a href="http://dev.iris.edu/hq/short-courses/">
+               Short Courses
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/webinar/">
+               Webinars
+              </a>
+              |
+              <a href="http://dev.iris.edu/hq/event/">
+               Other
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/calendar/">
+               Calendar
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div class="col-sm-4">
+            <h4>
+             Educational Resources
+            </h4>
+            <ul>
+             <li>
+              <a href="http://dev.iris.edu/hq/retm/">
+               Teachable Moments
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/education_and_outreach/resources">
+               For The Classroom
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/education_and_outreach/videos">
+               Video Lecture Series
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/education_and_outreach/museum_displays/">
+               Public Displays
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/education_and_outreach/animations">
+               Animations
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/sis">
+               Seismographs in Schools
+              </a>
+             </li>
+             <li>
+              <a href="http://rev.seis.sc.edu/">
+               Seismogram Viewer
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/education_and_outreach/visualizations">
+               USArray Wave Visualizations
+              </a>
+             </li>
+             <li>
+              <a href="http://dev.iris.edu/hq/programs/education_and_outreach/professional_development/">
+               Teacher Professional Development
+              </a>
+             </li>
+             <li>
+              <a href="http://www.iris.edu/gallery3/">
+               Image Gallery
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
          </div>
-       </nav>
-       <div class="modal fade" tabindex="-1" role="dialog" id="iris-staff-login">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <h4 class="modal-title">IRIS Staff Login</h4>
-              </div>
-              <div class="modal-body">
-                <p>
-                  Loginin here will grant you the access to the IRIS staff internal pages such as Travel Authorization and Award Management. Once logedin, you will see a new main menu item "My IRIS" all the way to the right containing some useful links and informations. This is a independent login system from ds.iris.edu as it targets the different audience.
-                </p>
-                <form method="post" action="http://dev.iris.edu/hq/">
-<div class="hiddenFields">
-<input type="hidden" name="ACT" value="59">
-<input type="hidden" name="RET" value="/">
-<input type="hidden" name="site_id" value="1">
-<input type="hidden" name="csrf_token" value="d058a9d9eb497fac25f4f056fdde6cc0a26e3115">
-</div>
-
-
-                  <div class="form-group">
-                    <label for="username">Username </label>
-                    <input type="text" class="form-control" id="username" name="username" placeholder="Username">
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-                  </div>
-
-
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox" checked="" name="auto_login" value="1"> Auto-login on future visits
-                      </label>
-                    </div>
-
-
-                  <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <a href="http://dev.iris.edu/hq/member/forgot_password">Forgot your password?</a>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-  <div class="wrapper">
-
-  <div id="page">
-                <div id="breadcrumbs">
-                        <ul class="breadcrumbs">
-                                <li><a href="http://dev.iris.edu/hq/">Home</a> <span class="divider">/</span> </li><li>Search</li>
-                        </ul>
-                </div>
-
-<div id="col-left">
-                        <div id="submenu">
-                                <ul><li><a href="/hq/about_iris">About IRIS</a></li><li><a href="/hq/programs/gsn">Programs</a></li><li><a href="/hq/programs/education_and_outreach">Educational Resources</a></li><li><a href="data_and_software">Data &amp; Software</a></li><li><a href="/hq/multimedia">Multimedia</a></li><li><a href="/hq/webinar">Webinar</a></li></ul>
-                        </div>
-                </div>
-
-                <div id="col-right">
-
-                <div id="page-content">
-
-<h1>Page Title</h1>
-
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-
-                </div>
-
-
+         <!-- End Item Container -->
+        </li>
+       </ul>
+      </div>
+     </nav>
+     <div class="modal fade" id="iris-staff-login" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+       <div class="modal-content">
+        <div class="modal-header">
+         <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+          <span aria-hidden="true">
+           ×
+          </span>
+         </button>
+         <h4 class="modal-title">
+          IRIS Staff Login
+         </h4>
         </div>
-
-    </div>
-
-    <div id="footer" class="wrapper">
-  <div class="row">
-    <div class="col-sm-4">
-      <ul>
-        <li class="footer-link-heading">Quick Links</li>
-        <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach/distinguished_lectureship" title="Distinguished Lectureship">Distinguished Lectureship</a></li>
-        <li><a href="http://ds.iris.edu/message-center/" title="Mailing Lists">Mailing Lists</a></li>
-        <li><a href="http://dev.iris.edu/hq/employment" title="Employment">Employment</a></li>
-        <li><a href="http://dev.iris.edu/hq/about_iris/faqs" title="Frequently Asked Questions">Frequently Asked Questions</a></li>
-        <li><a href="http://www.iris.edu/gallery3/" title="Image Gallery">Image Gallery</a></li>
-        <li><a href="http://www.youtube.com/user/IRISEnO" title="YouTube Channel" target="_blank">YouTube Channel</a></li>
-      </ul>
-      <ul>
-        <li><a href="http://dev.iris.edu/hq/sitemap" title="Site Map">Site Map</a></li>
-        <li><a href="http://dev.iris.edu/hq/contact" title="Contact Us">Contact Us</a></li>
-      </ul>
-      <ul>
-        <li>
-          <form action="http://dev.iris.edu/hq/search" method="get">
-            <input type="hidden" name="cx" value="000587591391783241528:dsb0_jo9rjy">
-            <input type="hidden" name="cof" value="FORID:9">
-            <input type="hidden" name="ie" value="UTF-8">
+        <div class="modal-body">
+         <p>
+          Loginin here will grant you the access to the IRIS staff internal pages such as Travel Authorization and Award Management. Once logedin, you will see a new main menu item "My IRIS" all the way to the right containing some useful links and informations. This is a independent login system from ds.iris.edu as it targets the different audience.
+         </p>
+         <form action="http://dev.iris.edu/hq/" method="post">
+          <div class="hiddenFields">
+           <input name="ACT" type="hidden" value="59"/>
+           <input name="RET" type="hidden" value="/"/>
+           <input name="site_id" type="hidden" value="1"/>
+           <input name="csrf_token" type="hidden" value="d058a9d9eb497fac25f4f056fdde6cc0a26e3115"/>
+          </div>
+          <div class="form-group">
+           <label for="username">
+            Username
+           </label>
+           <input class="form-control" id="username" name="username" placeholder="Username" type="text"/>
+          </div>
+          <div class="form-group">
+           <label for="password">
+            Password
+           </label>
+           <input class="form-control" id="password" name="password" placeholder="Password" type="password"/>
+          </div>
+          <div class="checkbox">
+           <label>
+            <input checked="" name="auto_login" type="checkbox" value="1"/>
+            Auto-login on future visits
+           </label>
+          </div>
+          <button class="btn btn-default" type="submit">
+           Submit
+          </button>
+         </form>
+        </div>
+        <div class="modal-footer">
+         <a href="http://dev.iris.edu/hq/member/forgot_password">
+          Forgot your password?
+         </a>
+        </div>
+       </div>
+       <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+     </div>
+     <!-- /.modal -->
+     <div class="wrapper">
+      <div id="page">
+       <div id="breadcrumbs">
+        <ul class="breadcrumbs">
+         <li>
+          <a href="http://dev.iris.edu/hq/">
+           Home
+          </a>
+          <span class="divider">
+           /
+          </span>
+         </li>
+         <li>
+          Search
+         </li>
+        </ul>
+       </div>
+       <div id="col-left">
+        <div id="submenu">
+         <ul>
+          <li>
+           <a href="/hq/about_iris">
+            About IRIS
+           </a>
+          </li>
+          <li>
+           <a href="/hq/programs/gsn">
+            Programs
+           </a>
+          </li>
+          <li>
+           <a href="/hq/programs/education_and_outreach">
+            Educational Resources
+           </a>
+          </li>
+          <li>
+           <a href="data_and_software">
+            Data &amp; Software
+           </a>
+          </li>
+          <li>
+           <a href="/hq/multimedia">
+            Multimedia
+           </a>
+          </li>
+          <li>
+           <a href="/hq/webinar">
+            Webinar
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div id="col-right">
+        <div id="page-content">
+         <h1>
+          Page Title
+         </h1>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="wrapper" id="footer">
+       <div class="row">
+        <div class="col-sm-4">
+         <ul>
+          <li class="footer-link-heading">
+           Quick Links
+          </li>
+          <li>
+           <a href="http://dev.iris.edu/hq/programs/education_and_outreach/distinguished_lectureship" title="Distinguished Lectureship">
+            Distinguished Lectureship
+           </a>
+          </li>
+          <li>
+           <a href="http://ds.iris.edu/message-center/" title="Mailing Lists">
+            Mailing Lists
+           </a>
+          </li>
+          <li>
+           <a href="http://dev.iris.edu/hq/employment" title="Employment">
+            Employment
+           </a>
+          </li>
+          <li>
+           <a href="http://dev.iris.edu/hq/about_iris/faqs" title="Frequently Asked Questions">
+            Frequently Asked Questions
+           </a>
+          </li>
+          <li>
+           <a href="http://www.iris.edu/gallery3/" title="Image Gallery">
+            Image Gallery
+           </a>
+          </li>
+          <li>
+           <a href="http://www.youtube.com/user/IRISEnO" target="_blank" title="YouTube Channel">
+            YouTube Channel
+           </a>
+          </li>
+         </ul>
+         <ul>
+          <li>
+           <a href="http://dev.iris.edu/hq/sitemap" title="Site Map">
+            Site Map
+           </a>
+          </li>
+          <li>
+           <a href="http://dev.iris.edu/hq/contact" title="Contact Us">
+            Contact Us
+           </a>
+          </li>
+         </ul>
+         <ul>
+          <li>
+           <form action="http://dev.iris.edu/hq/search" method="get">
+            <input name="cx" type="hidden" value="000587591391783241528:dsb0_jo9rjy"/>
+            <input name="cof" type="hidden" value="FORID:9"/>
+            <input name="ie" type="hidden" value="UTF-8"/>
             <div class="input-group input-group-sm">
-              <input type="text" class="form-control" name="q" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-              </span>
-            </div><!-- /input-group -->
-          </form>
-        </li>
-      </ul>
-      <ul>
-        <li>&nbsp;</li>
-        <li class="footer-link-heading"><a title="Submit a comment about this page content, or request page update." href="http://dev.iris.edu/hq/forms/web_update?from=http://dev.iris.edu/hq">Comments about this page <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></li>
-      </ul>
-    </div><!-- .footer-links-box -->
-    <div class="col-sm-4">
-      <ul>
-        <li class="footer-link-heading">Programs</li>
-        <li>
-          <ul>
-            <li><a href="http://dev.iris.edu/hq/programs/is" title="Instrumentation Services">Instrumentation Services</a></li>
-            <li><a href="http://dev.iris.edu/hq/programs/gsn" title="Global Seismographic Network">» Global Seismographic Network</a></li>
-            <li><a href="http://dev.iris.edu/hq/programs/passcal" title="Portable (PASSCAL)">» Portable (PASSCAL)</a></li>
-            <li><a href="http://www.usarray.org/researchers/obs/transportable" title="Transportable Array" target="_blank">» Transportable Array</a></li>
-            <li><a href="http://www.usarray.org/researchers/obs/magnetotelluric/" title="Magnetotelluric Array" target="_blank">» Magnetotelluric Array</a></li>
-            <li><a href="http://dev.iris.edu/hq/The-OBSIP" title="Ocean Bottom Seismograph Instrumentation Pool">» Ocean Bottom Seismograph Instrumentation Pool</a></li>
-            <li><a href="http://dev.iris.edu/hq/programs/polar" title="Polar">» Polar Programs</a></li>
-            <li><a href="http://dev.iris.edu/hq/programs/glisn" title="Greenland Ice Sheet Monitoring Network">» Greenland Ice Sheet Monitoring Network</a></li>
-            <li><a href="http://dev.iris.edu/hq/projects/chile" title="Global Reporting Observatories in Chile ">» Global Reporting Observatories in Chile</a></li>
-            <li><a href="http://dev.iris.edu/hq/programs/ds" title="Data Services">Data Services</a></li>
-            <li><a href="http://dev.iris.edu/hq/programs/education_and_outreach" title="Education and Public Outreach">Education and Public Outreach</a></li>
-            <li><a href="http://dev.iris.edu/hq/about_iris/governance/ids" title="International Development Seismology">International Development Seismology</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- .footer-links-box -->
-    <div class="col-sm-4">
-      <ul>
-        <li class="footer-link-heading"><a href="http://www.earthscope.org/" title="EarthScope" target="_bank">EarthScope</a></li>
-        <li><a href="http://www.earthscope.org/observatories/safod" title="SAFOD" target="_bank">SAFOD</a></li>
-        <li><a href="http://www.usarray.org/" title="USArray" target="_bank">USArray</a></li>
-        <li><a href="http://pbo.unavco.org/" title="Plate Boundary Observatory" target="_bank">Plate Boundary Observatory</a></li>
-      </ul>
-      <ul>
-        <li class="footer-link-heading">Research</li>
-        <li><a href="http://www.passcal.nmt.edu/maps/funded" title="Portable (PASSCAL) Experiments" target="_bank">Portable (PASSCAL) Experiments</a></li>
-        <li><a href="http://ds.iris.edu/data/" title="Data">Data</a></li>
-        <li><a href="http://ds.iris.edu/ds/nodes/dmc/software/" title="Software">Software</a></li>
-        <li><a href="http://www.iris.edu/hq/instrumentation" title="Instrumentation">Instrumentation</a></li>
-      </ul>
-    </div><!-- .footer-links-box -->
-  </div>
-  <div id="footer-bottom">
-    <ul>
-      <li><span><a href="http://dev.iris.edu/hq/" title="IRIS DEV"><img src="./images/URL_TXT.png"></a></span></li>
-      <li><em><a href="http://www.nsf.gov/" title="The National Science Foundation" target="_blank">Sponsored by the National Science Foundation</a></em></li>
-      <li><a href="http://dev.iris.edu/hq/" title="IRIS DEV">© Copyright 2016 IRIS DEV</a></li>
-      <li>1200 New York Avenue NW, Suite 400, Washington, DC  20005,  202-682-2220</li>
-      <li><a href="mailto:info@iris.edu">info@iris.edu</a></li>
-    </ul>
-  </div><!-- #footer-bottom -->
-  </div><!-- #footer -->
-  </div><!-- #site-container -->
-  <script type="text/javascript">
-    (function(){
+             <input class="form-control" name="q" placeholder="Search for..." type="text"/>
+             <span class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+               <i class="glyphicon glyphicon-search">
+               </i>
+              </button>
+             </span>
+            </div>
+            <!-- /input-group -->
+           </form>
+          </li>
+         </ul>
+         <ul>
+          <li>
+          </li>
+          <li class="footer-link-heading">
+           <a href="http://dev.iris.edu/hq/forms/web_update?from=http://dev.iris.edu/hq" title="Submit a comment about this page content, or request page update.">
+            Comments about this page
+            <span aria-hidden="true" class="glyphicon glyphicon-new-window">
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+        <!-- .footer-links-box -->
+        <div class="col-sm-4">
+         <ul>
+          <li class="footer-link-heading">
+           Programs
+          </li>
+          <li>
+           <ul>
+            <li>
+             <a href="http://dev.iris.edu/hq/programs/is" title="Instrumentation Services">
+              Instrumentation Services
+             </a>
+            </li>
+            <li>
+             <a href="http://dev.iris.edu/hq/programs/gsn" title="Global Seismographic Network">
+              » Global Seismographic Network
+             </a>
+            </li>
+            <li>
+             <a href="http://dev.iris.edu/hq/programs/passcal" title="Portable (PASSCAL)">
+              » Portable (PASSCAL)
+             </a>
+            </li>
+            <li>
+             <a href="http://www.usarray.org/researchers/obs/transportable" target="_blank" title="Transportable Array">
+              » Transportable Array
+             </a>
+            </li>
+            <li>
+             <a href="http://www.usarray.org/researchers/obs/magnetotelluric/" target="_blank" title="Magnetotelluric Array">
+              » Magnetotelluric Array
+             </a>
+            </li>
+            <li>
+             <a href="http://dev.iris.edu/hq/The-OBSIP" title="Ocean Bottom Seismograph Instrumentation Pool">
+              » Ocean Bottom Seismograph Instrumentation Pool
+             </a>
+            </li>
+            <li>
+             <a href="http://dev.iris.edu/hq/programs/polar" title="Polar">
+              » Polar Programs
+             </a>
+            </li>
+            <li>
+             <a href="http://dev.iris.edu/hq/programs/glisn" title="Greenland Ice Sheet Monitoring Network">
+              » Greenland Ice Sheet Monitoring Network
+             </a>
+            </li>
+            <li>
+             <a href="http://dev.iris.edu/hq/projects/chile" title="Global Reporting Observatories in Chile ">
+              » Global Reporting Observatories in Chile
+             </a>
+            </li>
+            <li>
+             <a href="http://dev.iris.edu/hq/programs/ds" title="Data Services">
+              Data Services
+             </a>
+            </li>
+            <li>
+             <a href="http://dev.iris.edu/hq/programs/education_and_outreach" title="Education and Public Outreach">
+              Education and Public Outreach
+             </a>
+            </li>
+            <li>
+             <a href="http://dev.iris.edu/hq/about_iris/governance/ids" title="International Development Seismology">
+              International Development Seismology
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </div>
+        <!-- .footer-links-box -->
+        <div class="col-sm-4">
+         <ul>
+          <li class="footer-link-heading">
+           <a href="http://www.earthscope.org/" target="_bank" title="EarthScope">
+            EarthScope
+           </a>
+          </li>
+          <li>
+           <a href="http://www.earthscope.org/observatories/safod" target="_bank" title="SAFOD">
+            SAFOD
+           </a>
+          </li>
+          <li>
+           <a href="http://www.usarray.org/" target="_bank" title="USArray">
+            USArray
+           </a>
+          </li>
+          <li>
+           <a href="http://pbo.unavco.org/" target="_bank" title="Plate Boundary Observatory">
+            Plate Boundary Observatory
+           </a>
+          </li>
+         </ul>
+         <ul>
+          <li class="footer-link-heading">
+           Research
+          </li>
+          <li>
+           <a href="http://www.passcal.nmt.edu/maps/funded" target="_bank" title="Portable (PASSCAL) Experiments">
+            Portable (PASSCAL) Experiments
+           </a>
+          </li>
+          <li>
+           <a href="http://ds.iris.edu/data/" title="Data">
+            Data
+           </a>
+          </li>
+          <li>
+           <a href="http://ds.iris.edu/ds/nodes/dmc/software/" title="Software">
+            Software
+           </a>
+          </li>
+          <li>
+           <a href="http://www.iris.edu/hq/instrumentation" title="Instrumentation">
+            Instrumentation
+           </a>
+          </li>
+         </ul>
+        </div>
+        <!-- .footer-links-box -->
+       </div>
+       <div id="footer-bottom">
+        <ul>
+         <li>
+          <span>
+           <a href="http://dev.iris.edu/hq/" title="IRIS DEV">
+            <img src="./images/URL_TXT.png"/>
+           </a>
+          </span>
+         </li>
+         <li>
+          <em>
+           <a href="http://www.nsf.gov/" target="_blank" title="The National Science Foundation">
+            Sponsored by the National Science Foundation
+           </a>
+          </em>
+         </li>
+         <li>
+          <a href="http://dev.iris.edu/hq/" title="IRIS DEV">
+           © Copyright 2016 IRIS DEV
+          </a>
+         </li>
+         <li>
+          1200 New York Avenue NW, Suite 400, Washington, DC  20005,  202-682-2220
+         </li>
+         <li>
+          <a href="mailto:info@iris.edu">
+           info@iris.edu
+          </a>
+         </li>
+        </ul>
+       </div>
+       <!-- #footer-bottom -->
+      </div>
+      <!-- #footer -->
+     </div>
+     <!-- #site-container -->
+     <script type="text/javascript">
+      (function(){
       $("a#dismiss-alert").on('click', function(e) {
         e.preventDefault();
         // console.log($(this));
@@ -579,9 +1381,9 @@ non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         $('#' + cookieKey).hide();
       }
     })();
-  </script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     </script>
+     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-1860730-1', 'auto');
@@ -597,9 +1399,9 @@ non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         return false;
       });
     });
-  </script>
-
-
-
-
-  </div></div></div></body></html>
+     </script>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
