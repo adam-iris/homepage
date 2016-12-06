@@ -1,0 +1,1539 @@
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
+
+html,
+body {
+  /*
+  background: #fff url(http://dev.iris.edu/hq/images/layout/backgrounds/map.png) repeat-x;
+  background-position-x: center;
+  background-position-y: top;
+  */
+  background-color: #e6e7e8;
+  margin: 0;
+  font-family: "Istok Web", arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #343434;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%;
+}
+
+.resource-wrapper {
+  background: #f2f2f2;
+  overflow: auto;
+  display: none;
+}
+
+.resources {
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+
+.search {
+  width: 150px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search input,
+.search button
+{
+  padding: 0;
+  margin: 0;
+  height: 21px !important;
+}
+
+.search button
+{
+  font-size: xx-small;
+  padding: 0px 10px 0px 10px;
+
+}
+.search button:hover{
+
+}
+.resources a {
+  display: table-cell;
+  width: 100px;
+  height: 55px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #fff;
+  font-size: 1em;
+  color: #333;
+  text-decoration: none;
+  margin: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.resources a:last-of-type {
+  border-right: 1px solid #ccc;
+}
+
+.resources a:hover {
+  background: #d2d2d2;
+  color: #42178a;
+}
+
+.wrapper {
+  width: auto;
+  margin: 0 auto;
+  border-top: none;
+  background: #fff;
+}
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a:link,
+a:visited {
+  color: #4b00a3;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #843adb;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+
+/* =============================================================================
+   Global CSS3 Enhancements
+   ========================================================================== */
+
+a,
+#header a img,
+.button a,
+.news-box-photo a img,
+.search-submit,
+#feature-left-links ul li a,
+.nivo-controlNav a img,
+#coverflow .carousel-controls a {
+  -webkit-transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  -moz-transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  -ms-transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  -o-transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+
+#alert-bar-container .button a:hover,
+#feature-left-links ul li a:hover,
+#coverflow .carousel-controls a:hover {
+  opacity: 1.0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+}
+
+#alert-bar-container .button a {
+  opacity: .9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+}
+
+#logo a img:hover,
+#nsf-logo a img:hover,
+#top-menu a img:hover,
+.button a:hover,
+.news-box-photo a img:hover,
+.search-submit:hover,
+#feature-monitor a img:hover,
+#coverflow .carousel-controls a {
+  opacity: .8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+
+#feature-left-links ul li a {
+  opacity: .3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+}
+
+.news-box-photo img,
+.photo-right img,
+.photo-left img,
+.photo-center img {
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(150, 150, 150, 0.3);
+  box-shadow: 3px 3px 3px 0px rgba(150, 150, 150, 0.3);
+}
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+.photoLeft {
+  float: left;
+  margin: 0 1em 1em 0;
+  padding: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1em 0;
+  font-family: "News Cycle", arial, sans-serif;
+}
+
+p {
+  margin: 1em 0;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: #660099;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #a7250f;
+}
+
+h3,
+h3 a {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #943030;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+h5 {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 0.65em;
+  font-weight: bold;
+  color: #666;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold !important;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+small {
+  font-size: 85%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul li,
+ol li {
+  margin-bottom: 8px;
+}
+
+ul {
+  margin: 0 0 25px 25px;
+  padding: 0;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin: 10px 0 0 20px;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+ol li li {
+  list-style-type: lower-latin;
+}
+
+ol li li li {
+  list-style-type: lower-roman;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+
+/**
+ * @comment  Override odd Bootstrap values (these don't seem to be the default
+ * @author   Rob Newman <rnewman@iris.washington.edu>
+ * @created  2014-04-07 1:51pm PDT
+ * @modified 2014-04-07 1:51pm PDT
+ */
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  font-size: normal;
+  line-height: normal;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+input:valid,
+textarea:valid {}
+
+input:invalid,
+textarea:invalid {
+  background-color: #f0dddd;
+}
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+
+/* =============================================================================
+   Miscellaneous
+   ========================================================================== */
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  color: #ccc;
+  width: 100%;
+  height: 1px;
+  text-align: left;
+  margin: 25px 0;
+}
+
+.center {
+  text-align: center !important;
+}
+
+blockquote {
+  margin: 25px;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/* Desktop is fixed width */
+
+.container {
+  width: 1010px;
+  max-width: none !important;
+}
+
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+#header-container {
+  background: #e6e7e8;
+  height: 100px;
+  width: 100%;
+}
+
+#header {
+  background: url(http://dev.iris.edu/hq/images/layout/backgrounds/top_banner_background_gradient.png);
+  margin: 0 auto 1em auto;
+  height: 100px;
+  position: relative;
+}
+
+#header-left {
+  width: 100%;
+}
+
+#logo {
+  float: left;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+#logo img {
+  height: 90px;
+}
+
+#logo-name {
+  position: absolute;
+  top: 58px;
+  left: 110px;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #000;
+  color: #ffffff;
+}
+
+#header-right {
+  margin-right: 10px;
+  float: right;
+}
+
+
+/*#top-menu {
+        margin: 0 66px 0 0;
+        padding: 0;
+        text-align: right;
+}*/
+
+ul#top-menu {
+  list-style: none;
+  /*        text-align: right;*/
+  margin: 0 0px 15px 0;
+  padding: 0;
+}
+
+ul#top-menu li {
+  list-style: none;
+  margin: 0 0 0 10px;
+  padding: 0;
+  display: inline;
+}
+
+#top-menu a:link,
+#top-menu a:active,
+#top-menu a:visited {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+#top-menu a:hover,
+#top-menu a:focus {
+  color: #ccc;
+}
+
+#nsf {
+  clear: both;
+}
+
+#nsf-logo {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+#nsf-logo img {
+  width: 56px;
+}
+
+#nsf-text {
+  font: 14px "Arial Narrow", Arial, sans-serif;
+  font-stretch: condensed;
+  color: #868686;
+}
+
+
+/* =============================================================================
+   Feature
+   ========================================================================== */
+
+#feature {
+  background: #fff;
+  width: auto;
+  height: 190px;
+  clear: both;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0;
+  position: relative;
+  z-index: 91;
+  margin-bottom: 25px;
+}
+
+#feature-top-right {
+        height: 165px;
+        width: 303px;
+        position: absolute;
+        padding: 20px;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: 100000;
+}
+
+#feature-top-right .button a {
+  color: #5b2fa8;
+  /*        text-transform: uppercase;*/
+  border: none;
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  z-index: 93;
+  bottom: 10px;
+  right: 20px;
+  width: 172px;
+}
+
+
+/* =============================================================================
+   Alert Bar
+   ========================================================================== */
+
+#alert-bar-container {
+  margin: -15px -15px 15px 0px;
+  border-bottom-left-radius: 15px;
+}
+
+#alert-bar-text {
+  word-break: break-word;
+}
+
+#alert-bar-container .button {
+  float: right;
+}
+
+#alert-bar-container .button a {
+  color: #fff;
+  /*        text-transform: uppercase;*/
+  border: none;
+}
+
+#alert-bar-container .button a:hover {
+  background-position: 99% center;
+}
+
+.alert-bar {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: normal;
+  padding: 5px 5px 5px 15px !important;
+}
+
+.alert-bar,
+.alert-bar a {
+  color: #fffbd6;
+}
+
+.alert-bar a:hover {
+  color: #fff;
+}
+
+.alert-bar .button a {
+  padding: 7px 30px 7px 10px;
+  font-size: 15px;
+}
+
+.red {
+  background: #a7240f;
+}
+
+.orange {
+  background: #af6a19;
+}
+
+.yellow {
+  background: #64793f;
+}
+
+.gray {
+  background: #7b7b7b;
+}
+
+
+/* =============================================================================
+   Coverflow Carousel
+   ========================================================================== */
+
+#coverflow-container {
+  background: #dbdbdb url(http://dev.iris.edu/hq/images/layout/backgrounds/coverflow.gif) bottom repeat-x;
+  width: 100%;
+  height: 190px;
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+#coverflow {
+  width: 880px;
+  height: 190px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+#coverflow a {
+  outline: none;
+}
+
+#coverflow .carousel-images {}
+
+#coverflow .carousel-images img {
+  visibility: hidden;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+#coverflow .carousel-controls .carousel-prev {
+  position: absolute;
+  top: 85px;
+  left: 12px;
+}
+
+#coverflow .carousel-controls .carousel-next {
+  position: absolute;
+  top: 85px;
+  right: 12px;
+}
+
+
+/* =============================================================================
+   Tooltips
+   ========================================================================== */
+
+#aToolTip {
+  position: absolute;
+  display: none;
+  z-index: 50000;
+}
+
+#aToolTip .aToolTipContent {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.aToolTipBox {
+  background: #555 url(http://dev.iris.edu/hq/images/layout/backgrounds/black-70.png);
+  color: #fff;
+  margin: 0;
+  padding: 6px 12px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 2px 2px 5px #111;
+  -webkit-box-shadow: 2px 2px 5px #111;
+  box-shadow: 2px 2px 5px #111;
+}
+
+.aToolTipBox #aToolTipCloseBtn {
+  background: url(http://dev.iris.edu/hq/images/layout/buttons/close.png) no-repeat;
+  display: block;
+  height: 18px;
+  width: 18px;
+  text-indent: -9999px;
+  outline: none;
+  position: absolute;
+  top: -20px;
+  right: -30px;
+  margin: 2px;
+  padding: 4px;
+}
+
+
+/* =============================================================================
+   Homepage News Boxes
+   ========================================================================== */
+.row-main{
+  margin:0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+#main-page-events{}
+
+#main-page-events .badge{
+  width: 80px;
+}
+
+#main-page-events-table-container{
+  max-height: 200px;
+  overflow: auto;
+}
+
+.news-line-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 370px;
+  margin: 0;
+}
+
+#home-news-boxes {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#home-news-boxes .content {
+  padding-left: 15px;
+}
+#home-news-boxes h4 {
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+#home-news-boxes .col-sm-4 h4 {
+  padding-left: 0px;
+}
+
+#home-news-boxes img {
+  width: 100%;
+  max-width: 330px;
+  max-height: 150px;
+}
+
+.home-section-title {
+  color: #787878;
+}
+
+#main-page-chose-community {
+  background-color: #4e3594;
+  color: white;
+  text-align: center;
+}
+
+#main-page-chose-community .section-heder {
+  width:100%; padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+#main-page-chose-community .section-body {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-box-shadow: black 0px -4px 4px -2px;
+  box-shadow: black 0px -4px 4px -2px;
+  line-height: initial;
+}
+
+#main-page-chose-community .col-sm-2 img {
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+#main-page-chose-community a:link,
+#main-page-chose-community a:active,
+#main-page-chose-community a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* =============================================================================
+   Page
+   ========================================================================== */
+
+#site-container {
+  /*background: url(http://dev.iris.edu/hq/images/layout/backgrounds/site-container.png) 0 690px repeat-x;*/
+}
+
+#page {
+  background: #fff;
+  width: 100%;
+  min-height: 600px;
+  margin: 0 auto 30px auto;
+  padding: 0;
+  overflow: auto;
+  position: relative;
+}
+
+#page-content {
+  padding: 30px;
+  line-height: 1.5em;
+  overflow: auto;
+}
+
+
+/*==============================================================================
+BREADCRUMBS
+==============================================================================*/
+
+#breadcrumbs {
+  /*        background: #42178a url(http://dev.iris.edu/hq/images/layout/backgrounds/breadcrumbs.gif) top repeat-x;*/
+  background: -webkit-linear-gradient(#fff, #f2f2f2);
+  background: -moz-linear-gradient(#fff, #f2f2f2);
+  background: -o-linear-gradient(#fff, #f2f2f2);
+  background: -ms-linear-gradient(#fff, #f2f2f2);
+  background: linear-gradient(#fff, #f2f2f2);
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-weight: normal;
+  border-bottom: 1px solid #dedede;
+}
+
+#breadcrumbs ul.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#breadcrumbs ul.breadcrumbs li {
+  display: inline;
+}
+
+
+/* =============================================================================
+   Submenu
+   ========================================================================== */
+
+#submenu {
+  margin: 0 0 20px 0;
+  padding: 0;
+  border-right: 1px solid #dadada;
+}
+
+#submenu ul,
+#submenu ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#submenu li a:link,
+#submenu li a:active,
+#submenu li a:visited {
+  background: #ebebeb;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #dadada;
+  display: block;
+  text-decoration: none;
+  color: #343434;
+}
+
+#submenu li a:hover,
+#submenu li a:focus {
+  background: #f4f4f4;
+  color: #4b00a3;
+}
+
+#submenu li li a:link,
+#submenu li li a:active,
+#submenu li li a:visited {
+  background: #f4f4f4 url(http://dev.iris.edu/hq/images/layout/arrows/right.png) 11px 10px no-repeat;
+  font-size: 12px;
+  padding: 6px 10px 6px 20px;
+}
+
+#submenu li li a:hover {
+  background: #f8f8f8 url(http://dev.iris.edu/hq/images/layout/arrows/right.png) 11px 10px no-repeat;
+}
+
+#submenu li li li a:link,
+#submenu li li li a:active,
+#submenu li li li a:visited {
+  background: #f8f8f8 url(http://dev.iris.edu/hq/images/layout/bullets/middot-gray-small.png) 24px 11px no-repeat;
+  font-size: 11px;
+  padding: 6px 10px 6px 33px;
+  font-weight: normal;
+}
+
+#submenu li li li a:hover {
+  background: #fff url(http://dev.iris.edu/hq/images/layout/bullets/middot-gray-small.png) 24px 11px no-repeat;
+}
+
+#submenu .archives {
+  padding: 10px;
+}
+
+.archive-year {
+  border-bottom: 1px dotted #d9d9d9;
+}
+
+
+/* =============================================================================
+   Buttons
+   ========================================================================== */
+
+.button a {
+  background: url(http://dev.iris.edu/hq/images/layout/buttons/arrow_button_shadow.png) right center no-repeat;
+  color: #787878;
+  text-decoration: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 4px 28px 4px 10px;
+  border: 1px solid #dadada;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.button a:hover {
+  background-position: 99% center;
+}
+
+
+/* =============================================================================
+   Photos
+   ========================================================================== */
+
+#page-banner {}
+
+.photo-right {
+  margin: 0 0 20px 20px;
+  float: right;
+}
+
+.photo-left {
+  margin: 0 20px 20px 0;
+  float: left;
+}
+
+.photo-center {
+  text-align: center;
+  margin: 5px 0 20px 0;
+}
+
+.photo-right img,
+.photo-left img,
+.photo-center img {
+  background: #fff;
+  padding: 3px;
+}
+
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+  overflow: initial;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-top: 1em;
+  padding-left: 15px;
+  font-size: 85%;
+  line-height: 1.8em;
+  color: #9A9A9A;
+  background-color: white;
+}
+
+#footer ul,
+#footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer a:link,
+#footer a:active,
+#footer a:visited {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #bcbcbc;
+}
+
+#footer-links {
+  margin: 0 0 20px 0;
+  text-align: center;
+  overflow: auto;
+  height: 300px;
+}
+
+.footer-links-box {
+  display: inline-block;
+  float: left;
+  margin: 0 20px 0 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.first-box {
+  position: absolute;
+  left: 5%;
+}
+
+.second-box {
+  position: absolute;
+  left: 35%;
+}
+
+.third-box {
+  position: absolute;
+  left: 75%;
+}
+
+.footer-link-heading {
+  font-size: 120%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#footer-links a {
+  display: block;
+}
+
+#footer-links li {
+  padding: 0 0 0 5px;
+}
+
+#footer-links li.footer-link-heading {
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+#footer-links ul {
+  margin: 0 0 10px 0;
+}
+
+#footer-links ul ul,
+#footer-links ul ul ul {
+  margin: 0 0 0 10px;
+}
+
+#footer-bottom {
+  background: #ececed;
+  text-align: center;
+  margin-left: -15px;
+  padding: 20px;
+  line-height: 1.4;
+  border-top: 1px solid #dedede;
+  margin-top: 20px;
+  clear: both;
+}
+
+#footer-bottom span {
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 26px;
+}
+
+
+/* =============================================================================
+   xxxx
+   ========================================================================== */
+
+
+/*=============================================================================
+  Helper classes
+ =============================================================================*/
+
+.i-panel-primary {
+  border-color: hsl(264, 81%, 90%);
+}
+
+.i-panel-primary > .panel-heading,
+.i-primary {
+  background-image: linear-gradient(to bottom, hsl(264, 81%, 90%) 0%, white 100%);
+  background-repeat: repeat-x;
+  border-color: hsl(264, 81%, 90%);
+  color: hsl(264, 50%, 20%) !important;
+  background-color: hsl(264, 81%, 90%);
+}
+
+.i-panel-success {
+  border-color: hsl(186, 54%, 70%);
+}
+
+.i-panel-success > .panel-heading,
+.i-success {
+  background-image: linear-gradient(to bottom, hsl(186, 54%, 70%) 0%, white 100%);
+  background-repeat: repeat-x;
+  border-color: hsl(186, 54%, 70%);
+  color: hsl(186, 100%, 16%) !important;
+  background-color: hsl(186, 54%, 70%);
+}
+
+.i-panel-warning {
+  border-color: hsl(0, 31%, 71%);
+}
+
+.i-panel-warning > .panel-heading,
+.i-warning {
+  background-image: linear-gradient(to bottom, hsl(0, 31%, 71%) 0%, white 100%);
+  background-repeat: repeat-x;
+  border-color: hsl(0, 31%, 71%);
+  color: hsl(0, 51%, 18%) !important;
+  background-color: hsl(0, 31%, 71%);
+}
+
+.i-panel-info {
+  border-color: hsl(190.2, 65.4%, 84.1%);
+}
+
+.i-panel-info > .panel-heading,
+.i-info {
+  background-image: linear-gradient(to bottom, hsl(190.2, 65.4%, 84.1%) 0%, white 100%);
+  background-repeat: repeat-x;
+  border-color: hsl(190.2, 65.4%, 84.1%);
+  color: #31708f !important;
+  background-color: hsl(190.2, 65.4%, 84.1%);
+}
+
+.i-primary:hover {
+  background-image: linear-gradient(to bottom, hsl(264, 81%, 70%) 0%, white 100%);
+  background-repeat: repeat-x;
+  border-color: hsl(264, 81%, 70%);
+  background-color: hsl(264, 81%, 70%);
+}
+
+.i-success:hover {
+  background-image: linear-gradient(to bottom, hsl(186, 54%, 50%) 0%, white 100%);
+  background-repeat: repeat-x;
+  border-color: hsl(186, 54%, 50%);
+  background-color: hsl(186, 54%, 50%);
+}
+
+.i-warning:hover {
+  background-image: linear-gradient(to bottom, hsl(0, 51%, 55%) 0%, white 100%);
+  background-repeat: repeat-x;
+  border-color: hsl(0, 51%, 55%);
+  background-color: hsl(0, 51%, 55%);
+}
+
+.i-info:hover {
+  background-image: linear-gradient(to bottom, hsl(190.2, 65.4%, 64.1%) 0%, white 100%);
+  background-repeat: repeat-x;
+  border-color: hsl(190.2, 65.4%, 64.1%);
+  background-color: hsl(190.2, 65.4%, 64.1%);
+}
+
+
+/* entire container, keeps perspective */
+
+.flip-container {
+  perspective: 1000;
+}
+
+
+/* flip the pane when hovered */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  width: 100%;
+  height: 300px;
+}
+
+
+/* flip speed goes here */
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+
+/* hide back of pane during swap */
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* front pane, placed above back */
+
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+
+/* back, initially hidden pane */
+
+.back {
+  transform: rotateY(180deg);
+}
+
+
+/**
+ * Adjusting page to go full width
+ */
+.container {
+  width: 100%;
+  max-width: 1015px !important;
+  overflow: hidden;
+}
+
+#col-left, #col-right {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+#col-left {
+  width: 25%;
+}
+
+#col-right {
+  width: 75%;
+}
+
+@media screen and (min-width: 100px) {
+  .carousel-indicators {
+    bottom: 10px;
+  }
+}
+
+@media print {
+  .nav_menu_container,
+  #top-menu,
+  #footer,
+  #codeigniter_profiler,
+  #expressionengine_template_debug{
+    display: none;
+  }
+
+  html,
+  body {
+    background: white;
+    margin: 0;
+    font-family:  "Istok Web",arial, helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: black;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+  }
+
+  .wrapper {
+    border: none;
+  }
+
+  a[href]:after {
+    content: "" !important;
+  }
+}
+
+/* Small screen */
+
+@media screen and (max-width: 1010px) {
+  /* Remove the small text in the nav manu */
+
+  .nav_menu_drop small
+  {
+    display: none;
+  }
+
+  #toggle-mega-menu {
+    padding-top: 18px;
+  }
+
+  #toggle-mega-menu button {
+    background-color: rgba(73, 37, 136, 1);
+    color: white;
+  }
+
+  #top-menu{
+    margin-top: -18px !important;
+  }
+
+}
+
+
+/* Extra small screen */
+
+@media screen and (max-width: 768px) {
+  #page,
+  #breadcrumbs {
+    border-top-right-radius: 9px !important;
+    border-top-left-radius: 9px !important;
+  }
+  #submenu {
+    padding: 0 -15px 20px -15px !important;
+  }
+
+  #main-page-chose-community .col-sm-2 img {
+    position: relative;
+  }
+
+  #alert-bar-container {
+    border-bottom-left-radius: 0px;
+    margin-left: -15px;
+    margin-top: 20px;
+  }
+
+  #main-page-events{
+    margin-top: 30px;
+  }
+
+  #main-page-events-table-container {
+    max-height: inherit;
+  }
+
+  #top-menu,
+  #header-right,
+  #logo-name,
+  #page .row .col-sm-3,
+  #col-left,
+  #footer .row,
+  #feature,
+  .nav_menu_container{
+    display: none;
+  }
+
+  .nav_menu > li{
+    display: block !important;
+  }
+  .nav_menu_dropdown_container{
+    z-index: 5 !important;
+    position: relative !important;
+  }
+
+  #page-content,
+  #feature,
+  #header,
+  #header-left,
+  #col-right,
+  #page-content  {
+    width: 100% !important;
+  }
+
+  .v-space{
+    padding: 20px;
+  }
+
+  #page-content img,
+  #page img{
+    margin: 2px !important;
+    padding: 1px !important;
+    float: none !important;
+    border: none !important;
+  }
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  table img{
+    display: block;
+    max-width: 100% !important;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border-bottom: 1px double #7B7B7B;
+  }
+  tr:last-child {
+    border-bottom: none;
+  }
+  td,
+  .nivoSlider img {
+    position: relative !important;
+  }
+
+
+  #page-content {
+    padding: 5px 15px 5px 5px !important
+  }
+
+  .container{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #page-content  {
+    height: auto !important;
+  }
+  #footer,
+  .nivoSlider {
+    text-align: center;
+  }
+}
