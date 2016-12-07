@@ -502,6 +502,22 @@ blockquote {
   width: 1010px;
   max-width: none !important;
 }
+/**
+ * Adjusting page to go full width
+ */
+.container {
+  width: 100%;
+  max-width: 1015px !important;
+  overflow: hidden;
+}
+
+.container-inner {
+  box-shadow: 0 0px 7px 3px rgba(0,0,0,.25);
+  margin-bottom: 50px;
+  border: 1px solid #aaa;
+  border-top: none;
+  background: #fff;
+}
 
 
 /* =============================================================================
@@ -509,14 +525,12 @@ blockquote {
    ========================================================================== */
 
 #header-container {
-  background: #e6e7e8;
   height: 100px;
   width: 100%;
 }
 
 #header {
   background: url(http://dev.iris.edu/hq/images/layout/backgrounds/top_banner_background_gradient.png);
-  margin: 0 auto 1em auto;
   height: 100px;
   position: relative;
 }
@@ -1082,13 +1096,12 @@ BREADCRUMBS
 #footer {
   overflow: initial;
   margin: auto;
-  margin-bottom: 50px;
   padding-top: 1em;
   padding-left: 15px;
   font-size: 85%;
   line-height: 1.8em;
   color: #9A9A9A;
-  background-color: white;
+  border-top: 1px solid #ddd;
 }
 
 #footer ul,
@@ -1174,7 +1187,7 @@ BREADCRUMBS
   margin-left: -15px;
   padding: 20px;
   line-height: 1.4;
-  border-top: 1px solid #dedede;
+  border-top: 1px solid #ddd;
   margin-top: 20px;
   clear: both;
 }
@@ -1333,15 +1346,6 @@ BREADCRUMBS
   transform: rotateY(180deg);
 }
 
-
-/**
- * Adjusting page to go full width
- */
-.container {
-  width: 100%;
-  max-width: 1015px !important;
-  overflow: hidden;
-}
 
 #col-left, #col-right {
   position: relative;

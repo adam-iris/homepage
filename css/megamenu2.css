@@ -3,8 +3,6 @@
   box-sizing: border-box;
   z-index: 999;
   border-bottom: 1px solid #ddd;
-  -webkit-box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.3);
-  box-shadow: 0px 3px 3px 0px rgba(150, 150, 150, 0.3);
 }
 
 .nav_menu {
@@ -31,8 +29,9 @@
   display: block;
   padding: 4px 12px 9px;
   border: 1px solid rgba(0, 0, 0, 0);
-  margin: -1px;
-  margin-bottom: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  margin: 0 -1px;
   z-index: 1;
   position: relative;
   transition-property: background, border;
@@ -96,8 +95,8 @@
   position: absolute;
   margin: 0;
   padding: 0;
-  left: -1px;
-  right: -1px;
+  left: 0;
+  right: 0;
   z-index: 0;
   overflow-y: hidden;
   overflow-x: visible;
@@ -111,12 +110,11 @@
   -o-transition: margin 0.5s ease;
   -ms-transition: margin 0.5s ease;
   transition: margin 0.5s ease;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   background-color: #f0f0f0;
   background-image: linear-gradient(to bottom, #f0f0f0, #fff);
   margin: -999px 0 12px 0;
-  border-top-width: 0;
-  box-shadow: 0 7px 7px -3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.15);
 }
 
 .nav_menu_dropdown h1,
@@ -173,8 +171,7 @@
 
 .nav_menu > li:hover > a {
   background: #f0f0f0;
-  border-color: #ccc;
-  border-bottom-color: #f0f0f0;
+  border-color: #aaa;
 }
 
 .nav_menu > li:hover .nav_menu_dropdown {
