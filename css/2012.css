@@ -551,8 +551,8 @@ blockquote {
 }
 
 #header {
-  background-color: #4D3493;
-  background-image: linear-gradient(#694FA1, #4D3493, #41277C);
+  background-color: #5a3493;
+  background-image: linear-gradient(#704fa1, #5a3493, #49277c);
   height: 100px;
   position: relative;
 }
@@ -567,17 +567,13 @@ blockquote {
   margin-top: 7px;
 }
 
-#logo img {
-  height: 90px;
-}
-
 #logo-name {
   position: absolute;
   top: 58px;
   left: 110px;
   font-size: 25px;
   font-weight: bold;
-  text-shadow: 3px 3px 3px #000;
+  text-shadow: 4px 4px 4px rgba(0,0,0,.3);
   color: #ffffff;
 }
 
