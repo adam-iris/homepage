@@ -16,7 +16,7 @@ body {
   margin: 0;
   font-family: "Istok Web", arial, helvetica, sans-serif;
   font-size: 14px;
-  line-height: 1.5em;
+  line-height: 1.5;
   color: #343434;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -496,12 +496,6 @@ blockquote {
 }
 
 
-/* Desktop is fixed width */
-
-.container {
-  width: 1010px;
-  max-width: none !important;
-}
 /**
  * Adjusting page to go full width
  */
@@ -509,11 +503,11 @@ blockquote {
   width: 100%;
   max-width: 1015px !important;
   overflow: hidden;
+  padding-bottom: 50px;
 }
 
 .container-inner {
   box-shadow: 0 0px 7px 3px rgba(0,0,0,.25);
-  margin-bottom: 50px;
   border: 1px solid #aaa;
   border-top: none;
   background: #fff;
@@ -569,7 +563,7 @@ blockquote {
 
 #logo-name {
   position: absolute;
-  top: 58px;
+  bottom: 13px;
   left: 110px;
   font-size: 25px;
   font-weight: bold;
@@ -945,14 +939,12 @@ ul#top-menu li {
   min-height: 600px;
   margin: 0 auto 30px auto;
   padding: 0;
-  overflow: auto;
   position: relative;
 }
 
 #page-content {
   padding: 30px;
   line-height: 1.5em;
-  overflow: auto;
 }
 
 
@@ -1448,11 +1440,6 @@ BREADCRUMBS
 /* Extra small screen */
 
 @media screen and (max-width: 768px) {
-  #page,
-  #breadcrumbs {
-    border-top-right-radius: 9px !important;
-    border-top-left-radius: 9px !important;
-  }
   #submenu {
     padding: 0 -15px 20px -15px !important;
   }
@@ -1478,7 +1465,6 @@ BREADCRUMBS
   #top-menu,
   #header-right,
   #logo-name,
-  #page .row .col-sm-3,
   #col-left,
   #footer-top,
   #feature,
@@ -1515,44 +1501,17 @@ BREADCRUMBS
     border: none !important;
   }
 
-  /* Force table to not be like tables anymore */
-  table, thead, tbody, th, td, tr {
-    display: block;
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  table img{
-    display: block;
-    max-width: 100% !important;
-  }
-
-  /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  tr {
-    border-bottom: 1px double #7B7B7B;
-  }
-  tr:last-child {
-    border-bottom: none;
-  }
   td,
   .nivoSlider img {
     position: relative !important;
   }
 
-
   #page-content {
-    padding: 5px 15px 5px 5px !important
+    padding: 10px !important
   }
 
-  .container{
-    padding-left: 5px;
-    padding-right: 5px;
+  .container {
+    padding: 0 !important;
   }
 
   #page-content  {
